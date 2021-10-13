@@ -21,9 +21,9 @@ namespace dotnet_isolated_60
         {
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
-            string date = System.DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss");
+string date = "2021-10-13T13:41:34.082Z";
 
-            response.WriteString(date + " abcd");
+            response.WriteString(date);
             return response;
         }
     }

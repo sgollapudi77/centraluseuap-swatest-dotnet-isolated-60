@@ -8,6 +8,11 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+  workflow_run:
+    workflows: 
+      - AutoUpdateFile
+    types: 
+      - completed
 
 jobs:
   build_and_deploy_job:
